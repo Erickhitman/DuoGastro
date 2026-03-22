@@ -25,6 +25,9 @@ duogastro/
 ├── img/
 │   ├── Fricasse-de-frango-cremoso.jpg
 │   └── Bolo ninho com morango.jpg
+│   ├── Bolo de morango.jpg
+│   └── fricasse.webp
+│   └── Duo.png
 └── páginas/
     ├── Salgado.html
     └── Doce.html
@@ -62,13 +65,8 @@ git clone https://github.com/Erickhitman/duogastro.git
 
 ---
 
-## 🌐 Deploy
-
-Site publicado via **GitHub Pages**:  
-👉 [erickhitman.github.io/duogastro](https://erickhitman.github.io/duogastro)
-
----
-
 ## 👨‍💻 Autor
 
-Feito por **Erick** — [@Erickhitman](https://github.com/Erickhitman)
+Feito por **Erick** — [@Erickhitman](https://github.com/Erickhitman) <br>
+Professor Orientador: Danilo Coelho <br>
+Senai Frederico Jacob
