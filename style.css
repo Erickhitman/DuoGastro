@@ -12,67 +12,81 @@ body {
 
 .header {
   width: 100%;
-  margin: 0;
-  padding: 0;
+  height: 8vh;
   background-color: #eeeeee;
   border-bottom: 3px solid #ffcc00;
   z-index: 3;
 }
 
+
 .header > nav > ul {
   display: flex;
   list-style: none;
   margin: 0;
-  padding: 0 20px;
   align-items: center;
 }
 
-.header > nav > ul > li {
-  padding: 1.5px 5px;
+.nav-icn {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  list-style: none;
+  height: 100%;
+  margin: 0;
+  padding: 0 2rem;
+  gap: 40px;
 }
 
-.header > nav > ul > li > .nav-icn {
+.nav-links {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.nav-icn a {
   text-decoration: none;
   color: #333333;
-  padding: 8px 15px;
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
-.header > nav > ul > li > .nav-icn:hover {
+
+.nav-links a:hover {
   background-color: #ffcc00;
   border-radius: 15px;
-  vertical-align: middle;
+  padding: 0.5rem;
   color: black;
   transition: 0.5s;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .header > nav > ul > li:first-child {
   margin-right: auto;
 }
-.header > nav > ul > li > .txt {
+
+.txt {
   text-decoration: none;
   font-size: 0.8rem;
 }
 
-.header > nav > ul > li > .txt > h1 {
+.txt > h1 {
   color: black;
   text-shadow: 1px 2px 0 #ffcc00;
+  padding-bottom: 1rem;
 }
 
-.header > nav > ul > li > .txt > h1:hover {
+.txt > h1:hover {
   color: #ffcc00;
   text-shadow: 1px 2px 0 black;
 }
 
-.header > nav > ul > li > .txt > h1 > span {
+.txt > h1 > span {
   color: #ffcc00;
   text-shadow: 1px 2px 0 black;
   transition: 0.4s;
 }
 
-.header > nav > ul > li > .txt > h1:hover > span {
+.txt > h1:hover > span {
   color: black;
   text-shadow: 1px 2px 0 #ffcc00;
   transition: 0.4s;
@@ -341,4 +355,60 @@ main {
   font-size: 1rem;
   line-height: 1.7;
   color: #333;
+}
+
+@media (max-width: 768px) {
+  footer,
+  header {
+    min-width: 100vw;
+  }
+
+  .header {
+    min-height: 15vh;
+  }
+
+  .header > * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-icn > a {
+    text-decoration: none;
+  }
+
+  .nav-title {
+    display: none;
+  }
+
+  .nav-icn {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0 1rem;
+    height: 15vh;
+    width: 100vw;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer {
+    margin: 0;
+    padding: 0;
+    height: 5vh;
+  }
+  .footer-logo {
+    display: none;
+  }
+
+  .footer-nav {
+    display: none;
+  }
+
+  .footer-copy {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
